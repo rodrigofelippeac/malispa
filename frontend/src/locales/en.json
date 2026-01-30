@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Experiences",
+    "contact": "Contact",
+    "scheduleAppointment": "Book Appointment"
+  },
+  "hero": {
+    "tagline": "An invitation to care",
+    "description": "Our therapies combine ancestral techniques with present listening — respecting the rhythm of those who arrive.",
+    "location": "Tambaú, João Pessoa",
+    "scheduleButton": "Book Appointment",
+    "viewExperiences": "View Experiences",
+    "scrollDown": "Scroll down"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Wellness through ancestral techniques",
+    "description": "Mali Spa is a space dedicated to integral care. Our therapies combine ancestral knowledge with attentive and present listening, respecting the unique rhythm of each person who arrives.\n\nWe believe that true wellness is born from the balance between body, mind, and spirit. That's why each session is designed to provide not only relaxation, but an experience of reconnection with yourself.",
+    "differentials": {
+      "title": "Our Differentials",
+      "listening": {
+        "title": "Present Listening",
+        "description": "Each session begins with attentive listening to your needs"
+      },
+      "techniques": {
+        "title": "Ancestral Techniques",
+        "description": "We combine ancient wisdom with modern therapeutic practices"
+      },
+      "personalized": {
+        "title": "Personalized Service",
+        "description": "Each session is unique and adapted to your rhythm and moment"
+      },
+      "environment": {
+        "title": "Welcoming Environment",
+        "description": "A space designed to provide comfort and tranquility"
+      }
+    }
+  },
+  "services": {
+    "title": "Our Experiences",
+    "subtitle": "Discover the care you deserve",
+    "scheduleService": "Book Now",
+    "items": {
+      "experienceTherapy": {
+        "name": "Experience Therapy",
+        "description": "Therapy that combines ancestral techniques with present listening, respecting the rhythm of those who arrive."
+      },
+      "experienceRelax": {
+        "name": "Experience Relax",
+        "description": "Experience focused on deep relaxation and renewal of body and mind."
+      },
+      "ritualAconchego": {
+        "name": "Comfort Ritual",
+        "description": "A special ritual of care and comfort to reconnect body and spirit."
+      },
+      "ritualRevitalizar": {
+        "name": "Revitalize Ritual",
+        "description": "Revitalization and energy renewal ritual through holistic techniques."
+      },
+      "daySpaMali": {
+        "name": "Day Spa Mali",
+        "description": "Complete and extended wellness experience with multiple therapies."
+      },
+      "daySpaSentir": {
+        "name": "Day Spa Sentir",
+        "description": "Extended sensory journey for a complete self-care experience."
+      },
+      "coupleExperiences": {
+        "name": "Couple Experiences",
+        "description": "Special moments of relaxation and connection designed for couples."
+      }
+    },
+    "categories": {
+      "massagens": "Massages",
+      "banhos": "Baths",
+      "tratamentos": "Treatments"
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We are ready to care for you",
+    "whatsapp": "WhatsApp",
+    "phone": "Phone",
+    "email": "Email",
+    "instagram": "Instagram",
+    "location": {
+      "title": "Location",
+      "address": "Tambaú, João Pessoa - PB, Brazil",
+      "viewMap": "View on map"
+    },
+    "hours": {
+      "title": "Business Hours",
+      "weekdays": "Monday to Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "byAppointment": "By appointment"
+    },
+    "whatsappMessage": "Hello! I would like to schedule an appointment at Mali Spa.",
+    "serviceMessage": "Hello! I would like to schedule: {{serviceName}}"
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "contactInfo": "Contact",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved.",
+    "developedBy": "Developed with",
+    "location": "Location"
+  },
+  "common": {
+    "loading": "Loading...",
+    "close": "Close",
+    "menu": "Menu",
+    "language": "Language"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "services": "Experiências",
+    "contact": "Contato",
+    "scheduleAppointment": "Agendar Horário"
+  },
+  "hero": {
+    "tagline": "Um convite ao cuidado",
+    "description": "Nossas terapias combinam uma escuta presente e técnicas holísticas — respeitando o ritmo de quem chega.",
+    "location": "Tambaú, João Pessoa",
+    "scheduleButton": "Agendar Horário",
+    "viewExperiences": "Ver Experiências",
+    "scrollDown": "Rolar para baixo"
+  },
+  "about": {
+    "title": "Sobre Nós",
+    "subtitle": "Um refúgio de bem-estar em João Pessoa",
+    "description": "O Mali Spa é um espaço dedicado ao cuidado integral. Nossas terapias combinam uma escuta atenta e presente, respeitando o ritmo único de cada pessoa que chega.\n\nAcreditamos que o verdadeiro bem-estar nasce do equilíbrio entre corpo, mente e espírito. Por isso, cada sessão é pensada para proporcionar não apenas relaxamento, mas uma experiência de reconexão consigo mesmo.",
+    "differentials": {
+      "title": "Nossos Diferenciais",
+      "listening": {
+        "title": "Escuta Presente",
+        "description": "Cada atendimento começa com uma escuta atenta às suas necessidades"
+      },
+      "techniques": {
+        "title": "Técnicas Holísticas",
+        "description": "Combinamos saberes terapêuticos com práticas modernas de bem-estar"
+      },
+      "personalized": {
+        "title": "Atendimento Personalizado",
+        "description": "Cada sessão é única e adaptada ao seu ritmo e momento"
+      },
+      "environment": {
+        "title": "Ambiente Acolhedor",
+        "description": "Um espaço pensado para proporcionar conforto e tranquilidade"
+      }
+    }
+  },
+  "services": {
+    "title": "Nossas Experiências",
+    "subtitle": "",
+    "scheduleService": "Agendar",
+    "items": {
+      "experienceTherapy": {
+        "name": "Experience Therapy",
+        "description": "Terapia que combina técnicas ancestrais com uma escuta presente, respeitando o ritmo de quem chega."
+      },
+      "experienceRelax": {
+        "name": "Experience Relax",
+        "description": "Experiência focada em relaxamento profundo e renovação do corpo e mente."
+      },
+      "ritualAconchego": {
+        "name": "Ritual Aconchego",
+        "description": "Um ritual especial de cuidado e aconchego para reconectar corpo e espírito."
+      },
+      "ritualRevitalizar": {
+        "name": "Ritual Revitalizar",
+        "description": "Ritual de revitalização e renovação de energias através de técnicas holísticas."
+      },
+      "daySpaMali": {
+        "name": "Day Spa Mali",
+        "description": "Experiência completa e estendida de bem-estar com múltiplas terapias."
+      },
+      "daySpaSentir": {
+        "name": "Day Spa Sentir",
+        "description": "Jornada sensorial prolongada para uma experiência completa de autocuidado."
+      },
+      "coupleExperiences": {
+        "name": "Experiências para Casais",
+        "description": "Momentos especiais de relaxamento e conexão pensados para casais."
+      }
+    },
+    "categories": {
+      "massagens": "Massagens",
+      "banhos": "Banhos",
+      "tratamentos": "Tratamentos"
+    }
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "subtitle": "Estamos prontos para cuidar de você",
+    "whatsapp": "WhatsApp",
+    "phone": "Telefone",
+    "email": "E-mail",
+    "instagram": "Instagram",
+    "location": {
+      "title": "Localização",
+      "address": "Tambaú, João Pessoa - PB",
+      "viewMap": "Ver no mapa"
+    },
+    "hours": {
+      "title": "Horário de Funcionamento",
+      "weekdays": "Segunda a Sexta",
+      "saturday": "Sábado",
+      "sunday": "Domingo",
+      "byAppointment": "Mediante agendamento"
+    },
+    "whatsappMessage": "Olá! Gostaria de agendar um horário no Mali Spa.",
+    "serviceMessage": "Olá! Gostaria de agendar: {{serviceName}}"
+  },
+  "footer": {
+    "navigation": "Navegação",
+    "contactInfo": "Contato",
+    "followUs": "Siga-nos",
+    "rights": "Todos os direitos reservados.",
+    "developedBy": "Desenvolvido com",
+    "location": "Localização"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "close": "Fechar",
+    "menu": "Menu",
+    "language": "Idioma"
+  }
+}

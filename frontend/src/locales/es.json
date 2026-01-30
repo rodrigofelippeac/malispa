@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "services": "Experiencias",
+    "contact": "Contacto",
+    "scheduleAppointment": "Agendar Cita"
+  },
+  "hero": {
+    "tagline": "Una invitación al cuidado",
+    "description": "Nuestras terapias combinan técnicas ancestrales con una escucha presente — respetando el ritmo de quienes llegan.",
+    "location": "Tambaú, João Pessoa",
+    "scheduleButton": "Agendar Cita",
+    "viewExperiences": "Ver Experiencias",
+    "scrollDown": "Desplazarse hacia abajo"
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "subtitle": "Bienestar a través de técnicas ancestrales",
+    "description": "Mali Spa es un espacio dedicado al cuidado integral. Nuestras terapias combinan saberes ancestrales con una escucha atenta y presente, respetando el ritmo único de cada persona que llega.\n\nCreemos que el verdadero bienestar nace del equilibrio entre cuerpo, mente y espíritu. Por eso, cada sesión está pensada para proporcionar no solo relajación, sino una experiencia de reconexión consigo mismo.",
+    "differentials": {
+      "title": "Nuestros Diferenciales",
+      "listening": {
+        "title": "Escucha Presente",
+        "description": "Cada sesión comienza con una escucha atenta a sus necesidades"
+      },
+      "techniques": {
+        "title": "Técnicas Ancestrales",
+        "description": "Combinamos sabidurías milenarias con prácticas terapéuticas modernas"
+      },
+      "personalized": {
+        "title": "Atención Personalizada",
+        "description": "Cada sesión es única y adaptada a su ritmo y momento"
+      },
+      "environment": {
+        "title": "Ambiente Acogedor",
+        "description": "Un espacio diseñado para proporcionar comodidad y tranquilidad"
+      }
+    }
+  },
+  "services": {
+    "title": "Nuestras Experiencias",
+    "subtitle": "Descubra el cuidado que se merece",
+    "scheduleService": "Agendar",
+    "items": {
+      "experienceTherapy": {
+        "name": "Experience Therapy",
+        "description": "Terapia que combina técnicas ancestrales con una escucha presente, respetando el ritmo de quienes llegan."
+      },
+      "experienceRelax": {
+        "name": "Experience Relax",
+        "description": "Experiencia enfocada en relajación profunda y renovación del cuerpo y la mente."
+      },
+      "ritualAconchego": {
+        "name": "Ritual de Confort",
+        "description": "Un ritual especial de cuidado y confort para reconectar cuerpo y espíritu."
+      },
+      "ritualRevitalizar": {
+        "name": "Ritual Revitalizar",
+        "description": "Ritual de revitalización y renovación de energías a través de técnicas holísticas."
+      },
+      "daySpaMali": {
+        "name": "Day Spa Mali",
+        "description": "Experiencia completa y extendida de bienestar con múltiples terapias."
+      },
+      "daySpaSentir": {
+        "name": "Day Spa Sentir",
+        "description": "Jornada sensorial prolongada para una experiencia completa de autocuidado."
+      },
+      "coupleExperiences": {
+        "name": "Experiencias para Parejas",
+        "description": "Momentos especiales de relajación y conexión diseñados para parejas."
+      }
+    },
+    "categories": {
+      "massagens": "Masajes",
+      "banhos": "Baños",
+      "tratamentos": "Tratamientos"
+    }
+  },
+  "contact": {
+    "title": "Póngase en Contacto",
+    "subtitle": "Estamos listos para cuidarlo",
+    "whatsapp": "WhatsApp",
+    "phone": "Teléfono",
+    "email": "Correo Electrónico",
+    "instagram": "Instagram",
+    "location": {
+      "title": "Ubicación",
+      "address": "Tambaú, João Pessoa - PB, Brasil",
+      "viewMap": "Ver en el mapa"
+    },
+    "hours": {
+      "title": "Horario de Atención",
+      "weekdays": "Lunes a Viernes",
+      "saturday": "Sábado",
+      "sunday": "Domingo",
+      "byAppointment": "Con cita previa"
+    },
+    "whatsappMessage": "¡Hola! Me gustaría agendar una cita en Mali Spa.",
+    "serviceMessage": "¡Hola! Me gustaría agendar: {{serviceName}}"
+  },
+  "footer": {
+    "navigation": "Navegación",
+    "contactInfo": "Contacto",
+    "followUs": "Síguenos",
+    "rights": "Todos los derechos reservados.",
+    "developedBy": "Desarrollado con",
+    "location": "Ubicación"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "close": "Cerrar",
+    "menu": "Menú",
+    "language": "Idioma"
+  }
+}

@@ -1,0 +1,116 @@
+import { useTranslation } from 'react-i18next'
+import Container from '../common/Container'
+
+/**
+ * Hero - Seção principal da landing page
+ * Baseada no design do site antigo Mali Spa
+ */
+export default function Hero() {
+  const { t } = useTranslation()
+
+  return (
+    <section
+      id="inicio"
+      className="relative min-h-screen md:h-screen flex items-center justify-center"
+      style={{
+        backgroundImage: 'url(/hero-massagem.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      {/* Overlay gradiente marrom/dourado para identidade visual */}
+      <div className="absolute inset-0 bg-gradient-to-b from-brown-dark/60 via-brown/50 to-primary/70" />
+
+      {/* Conteúdo */}
+      <Container className="relative z-10 pt-20 pb-16">
+        <div className="text-center space-y-8">
+          {/* Logo */}
+          <div className="flex justify-center mb-8">
+            <div className="w-96 h-96 md:w-[30rem] md:h-[30rem] lg:w-[36rem] lg:h-[36rem]">
+              <img
+                src="/logo-mali-spa.png"
+                alt="Mali Spa"
+                className="w-full h-full object-contain drop-shadow-2xl"
+              />
+            </div>
+          </div>
+
+          {/* Tagline */}
+          <p className="text-2xl md:text-3xl font-light text-white/95">
+            {t('hero.tagline')}
+          </p>
+
+          {/* Descrição */}
+          <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed px-4">
+            {t('hero.description')}
+          </p>
+
+          {/* Localização */}
+          <p className="text-base md:text-lg text-white/80 font-medium">
+            📍 {t('hero.location')}
+          </p>
+
+          {/* CTA */}
+          <div className="flex justify-center items-center pt-6">
+            <button
+              onClick={() => {
+                document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' })
+              }}
+              className="px-8 py-4 text-lg font-medium rounded-lg transition-all duration-200"
+              style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                backdropFilter: 'blur(4px)',
+                border: '2px solid rgba(255, 255, 255, 0.3)',
+                color: '#ffffff'
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.backgroundColor = '#ffffff'
+                e.target.style.color = '#311303'
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'
+                e.target.style.color = '#ffffff'
+              }}
+            >
+              {t('hero.viewExperiences')}
+            </button>
+          </div>
+
+          {/* Scroll Indicator */}
+          <div className="pt-12 animate-bounce">
+            <button
+              onClick={() => {
+                document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })
+              }}
+              className="text-white/60 hover:text-white transition-colors"
+              aria-label={t('hero.scrollDown')}
+            >
+              <svg
+                className="w-8 h-8 mx-auto"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </Container>
+
+      {/* Ondas decorativas bege no fundo */}
+      <div className="absolute bottom-0 left-0 right-0">
+        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
+          <path
+            d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
+            fill="#F5F0E8"
+          />
+        </svg>
+      </div>
+    </section>
+  )
+}
