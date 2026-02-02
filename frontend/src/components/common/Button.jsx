@@ -11,7 +11,7 @@ import PropTypes from 'prop-types'
  */
 export default function Button({
   children,
-  variant = 'primary',
+  variant = 'gold',
   size = 'md',
   disabled = false,
   loading = false,
@@ -23,11 +23,12 @@ export default function Button({
 }) {
   // Variantes de cores
   const variants = {
+    gold: 'text-brown-dark shadow-xl hover:shadow-2xl font-semibold',
     primary: 'bg-primary hover:bg-primary-light text-white shadow-lg hover:shadow-xl',
     secondary: 'bg-secondary-dark hover:bg-secondary text-primary-dark shadow-lg hover:shadow-xl border-2 border-secondary-dark',
     outline: 'bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white shadow-md hover:shadow-lg',
     ghost: 'bg-transparent text-primary hover:bg-secondary-light',
-    whatsapp: 'bg-primary hover:bg-primary-light text-white shadow-lg hover:shadow-xl',
+    whatsapp: 'bg-[#25d366] hover:bg-[#20ba5a] text-white shadow-lg hover:shadow-xl',
   }
 
   // Tamanhos
@@ -39,10 +40,28 @@ export default function Button({
   }
 
   // Classes base
-  const baseClasses = 'font-medium rounded-lg transition-all duration-200 ease-in-out transform hover:scale-102 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100'
+  const baseClasses = 'font-medium rounded-xl transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100'
 
   // Combinar classes
   const buttonClasses = `${baseClasses} ${variants[variant]} ${sizes[size]} ${className}`
+
+  // Estilos inline para gradiente gold
+  const goldStyle = variant === 'gold' ? {
+    background: 'linear-gradient(135deg, #C9A050 0%, #D4B46A 100%)',
+  } : {}
+
+  // Handlers para hover do gold
+  const handleMouseEnter = (e) => {
+    if (variant === 'gold') {
+      e.currentTarget.style.background = 'linear-gradient(135deg, #D4B46A 0%, #E5C77B 100%)'
+    }
+  }
+
+  const handleMouseLeave = (e) => {
+    if (variant === 'gold') {
+      e.currentTarget.style.background = 'linear-gradient(135deg, #C9A050 0%, #D4B46A 100%)'
+    }
+  }
 
   // Se for link (href)
   if (href) {
@@ -50,6 +69,9 @@ export default function Button({
       <a
         href={href}
         className={buttonClasses}
+        style={goldStyle}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
         target={href.startsWith('http') ? '_blank' : undefined}
         rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
         {...props}
@@ -66,6 +88,9 @@ export default function Button({
       onClick={onClick}
       disabled={disabled || loading}
       className={buttonClasses}
+      style={goldStyle}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
       {...props}
     >
       {loading ? (
@@ -85,7 +110,7 @@ export default function Button({
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
-  variant: PropTypes.oneOf(['primary', 'secondary', 'outline', 'ghost', 'whatsapp']),
+  variant: PropTypes.oneOf(['gold', 'primary', 'secondary', 'outline', 'ghost', 'whatsapp']),
   size: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
   disabled: PropTypes.bool,
   loading: PropTypes.bool,

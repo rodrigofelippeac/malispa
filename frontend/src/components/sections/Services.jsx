@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import Container from '../common/Container'
 import Card from '../common/Card'
+import Button from '../common/Button'
 import { daySpas, experiences, formatPrice } from '../../constants/services'
 import { FaWhatsapp, FaClock, FaUsers } from 'react-icons/fa'
 import { getWhatsAppLink } from '../../constants'
@@ -35,13 +36,13 @@ export default function Services() {
           </p>
         </div>
 
-        {/* Grid de Serviços */}
+        {/* Grid de Serviços - 6 serviços em destaque (3x2) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {featuredServices.map((service) => (
             <Card
               key={service.id}
               variant="default"
-              className="overflow-hidden group hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-2 border-gray-100"
+              className="overflow-hidden group hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-2 border-gray-100 flex flex-col h-full"
             >
               {/* Imagem */}
               <div className="relative h-56 md:h-48 bg-gradient-to-br from-secondary-100 via-secondary-light to-white overflow-hidden">
@@ -61,7 +62,7 @@ export default function Services() {
               </div>
 
               {/* Conteúdo */}
-              <div className="p-6 space-y-4">
+              <div className="p-6 space-y-4 flex flex-col flex-grow">
                 {/* Título */}
                 <h3 className="text-xl font-heading font-bold text-brown-dark group-hover:text-gold transition-colors">
                   {service.name}
@@ -111,26 +112,15 @@ export default function Services() {
                 )}
 
                 {/* CTA */}
-                <div className="pt-4">
-                  <a
+                <div className="pt-4 mt-auto">
+                  <Button
                     href={getWhatsAppLink(getServiceWhatsAppMessage(service.name))}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full flex items-center justify-center gap-2 px-4 py-3 text-sm font-semibold rounded-lg transition-all duration-200 shadow-md hover:shadow-xl hover:scale-105"
-                    style={{
-                      backgroundColor: '#311303',
-                      color: '#ffffff'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = '#5a3825'
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor = '#311303'
-                    }}
+                    size="md"
+                    className="w-full flex items-center justify-center gap-2"
                   >
                     <FaWhatsapp className="text-base" />
                     <span>Agendar Agora</span>
-                  </a>
+                  </Button>
                 </div>
               </div>
             </Card>

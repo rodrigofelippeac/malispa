@@ -27,7 +27,7 @@ export default function Hero() {
         <div className="text-center space-y-8">
           {/* Logo */}
           <div className="flex justify-center mb-8">
-            <div className="w-96 h-96 md:w-[30rem] md:h-[30rem] lg:w-[36rem] lg:h-[36rem]">
+            <div className="w-48 h-48 md:w-60 md:h-60 lg:w-72 lg:h-72">
               <img
                 src="/logo-mali-spa.png"
                 alt="Mali Spa"
@@ -46,31 +46,25 @@ export default function Hero() {
             {t('hero.description')}
           </p>
 
-          {/* Localização */}
-          <p className="text-base md:text-lg text-white/80 font-medium">
-            📍 {t('hero.location')}
-          </p>
-
           {/* CTA */}
           <div className="flex justify-center items-center pt-6">
             <button
               onClick={() => {
                 document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' })
               }}
-              className="px-8 py-4 text-lg font-medium rounded-lg transition-all duration-200"
+              className="px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"
               style={{
-                backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                backdropFilter: 'blur(4px)',
-                border: '2px solid rgba(255, 255, 255, 0.3)',
-                color: '#ffffff'
+                background: 'linear-gradient(135deg, #C9A050 0%, #D4B46A 100%)',
+                color: '#1a0a01',
+                border: 'none'
               }}
               onMouseEnter={(e) => {
-                e.target.style.backgroundColor = '#ffffff'
-                e.target.style.color = '#311303'
+                e.currentTarget.style.background = 'linear-gradient(135deg, #D4B46A 0%, #E5C77B 100%)'
+                e.currentTarget.style.transform = 'scale(1.05)'
               }}
               onMouseLeave={(e) => {
-                e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'
-                e.target.style.color = '#ffffff'
+                e.currentTarget.style.background = 'linear-gradient(135deg, #C9A050 0%, #D4B46A 100%)'
+                e.currentTarget.style.transform = 'scale(1)'
               }}
             >
               {t('hero.viewExperiences')}

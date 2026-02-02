@@ -16,7 +16,9 @@ export const contact = {
     neighborhood: 'Tambaú',
     city: 'João Pessoa',
     state: 'PB',
+    reference: 'Dentro do Hotel Aram',
     fullAddress: 'Rua Nossa Senhora dos Navegantes, 431 - Tambaú, João Pessoa - PB',
+    fullAddressWithReference: 'Rua Nossa Senhora dos Navegantes, 431 - Tambaú, João Pessoa - PB (Dentro do Hotel Aram)',
     mapsUrl: 'https://g.co/kgs/8ZwmVTu',
   },
 

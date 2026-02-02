@@ -46,19 +46,19 @@ export default function LanguageSelector() {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden z-50">
+        <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50">
           {languages.map((lang) => (
             <button
               key={lang.code}
               onClick={() => changeLanguage(lang.code)}
-              className={`w-full px-4 py-3 text-left hover:bg-gray-50 transition-colors flex items-center gap-3 ${
-                i18n.language === lang.code ? 'bg-primary/5 text-primary font-medium' : 'text-gray-700'
+              className={`w-full px-4 py-3 text-left hover:bg-beige-light transition-colors flex items-center gap-3 ${
+                i18n.language === lang.code ? 'bg-beige text-brown-dark font-semibold' : 'text-gray-700'
               }`}
             >
               <span className="text-xl">{lang.flag}</span>
               <span className="text-sm">{lang.name}</span>
               {i18n.language === lang.code && (
-                <span className="ml-auto text-primary text-lg">✓</span>
+                <span className="ml-auto text-gold text-lg">✓</span>
               )}
             </button>
           ))}

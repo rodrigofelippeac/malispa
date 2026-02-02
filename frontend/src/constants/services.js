@@ -7,6 +7,7 @@ export const daySpas = [
     name: 'Day Spa Mali',
     category: 'day-spa',
     description: 'Uma jornada completa de relaxamento e renovação.',
+    slogan: 'Experiência completa de bem-estar.',
     duration: '2h 30min',
     price: {
       individual: 450.00,
@@ -46,6 +47,7 @@ export const daySpas = [
     name: 'Day Spa Sentir',
     category: 'day-spa',
     description: 'Uma combinação relaxamento profundo, conexão e prazer sensorial.',
+    slogan: 'Conexão e prazer sensorial.',
     duration: '2h 30min',
     price: {
       individual: 490.00,
@@ -109,8 +111,8 @@ export const daySpas = [
         description: 'Chás Gourmet, Chocolate quente ou cappuccino e biscoitos finos',
       },
     ],
-    image: '/servico-03.jpg',
-    featured: false,
+    image: '/day-spa-aconchego.jpg',
+    featured: true,
   },
   {
     id: 'day-spa-revitalizar',
@@ -145,8 +147,8 @@ export const daySpas = [
         description: 'Drink funcional Gelado e nuts',
       },
     ],
-    image: '/servico-04.jpg',
-    featured: false,
+    image: '/day-spa-revitalizar.jpg',
+    featured: true,
   },
 ]
 

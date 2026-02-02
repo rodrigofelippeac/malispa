@@ -19,8 +19,21 @@ export default function Footer() {
   }
 
   return (
-    <footer style={{ background: 'linear-gradient(to bottom, #311303, #1a0a01)' }}>
-      <Container>
+    <footer className="relative overflow-hidden">
+      {/* Background com imagem e overlay */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: 'url(/footer-spa-rosas.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      />
+      {/* Overlay escuro para garantir legibilidade */}
+      <div className="absolute inset-0 z-0" style={{ background: 'linear-gradient(to bottom, rgba(49, 19, 3, 0.75), rgba(26, 10, 1, 0.85))' }} />
+
+      <Container className="relative z-10">
         <div className="py-12 md:py-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             {/* Logo e Tagline */}
@@ -154,9 +167,14 @@ export default function Footer() {
                 </a>
 
                 {/* Localização */}
-                <div className="flex items-center gap-3" style={{ color: '#e6efee' }}>
-                  <FaMapMarkerAlt className="text-lg" />
-                  <span>{contact.location.fullAddress}</span>
+                <div className="flex items-start gap-3" style={{ color: '#e6efee' }}>
+                  <FaMapMarkerAlt className="text-lg mt-1 flex-shrink-0" />
+                  <div>
+                    <div>{contact.location.fullAddress}</div>
+                    <div className="text-xs mt-1" style={{ color: '#C9A050' }}>
+                      {contact.location.reference}
+                    </div>
+                  </div>
                 </div>
 
                 {/* Instagram */}
