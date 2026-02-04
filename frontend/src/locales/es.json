@@ -40,36 +40,99 @@
   },
   "services": {
     "title": "Nuestras Experiencias",
-    "subtitle": "Descubra el cuidado que se merece",
+    "subtitle": "",
     "scheduleService": "Agendar",
-    "items": {
-      "experienceTherapy": {
-        "name": "Experience Therapy",
-        "description": "Terapia que combina técnicas de masajes con una escucha presente, respetando el ritmo de quienes llegan."
-      },
-      "experienceRelax": {
-        "name": "Experience Relax",
-        "description": "Experiencia enfocada en relajación profunda y renovación del cuerpo y la mente."
-      },
-      "ritualAconchego": {
-        "name": "Ritual de Confort",
-        "description": "Un ritual especial de cuidado y confort para reconectar cuerpo y espíritu."
-      },
-      "ritualRevitalizar": {
-        "name": "Ritual Revitalizar",
-        "description": "Ritual de revitalización y renovación de energías a través de técnicas de masajes."
-      },
-      "daySpaMali": {
+    "viewDetails": "Ver Detalles",
+    "scheduleNow": "Agendar Ahora",
+    "liveExperience": "Vivir el Hammam",
+    "exclusiveBadge": "Experiencia Exclusiva",
+    "exclusiveRarity": "Experiencia Exclusiva - Una rareza en João Pessoa",
+    "whatIncludes": "Qué incluye:",
+    "data": {
+      "day-spa-mali": {
         "name": "Day Spa Mali",
-        "description": "Experiencia completa y extendida de bienestar con múltiples terapias."
+        "slogan": "Experiencia completa de bienestar.",
+        "description": "Un viaje completo de relajación y renovación.",
+        "duration": "2h 30min",
+        "includes": [
+          {"name": "Ritual de Bienvenida", "description": "Baño de pies seguido de exfoliación y reflexología podal"},
+          {"name": "Aromaterapia", "description": null},
+          {"name": "Masaje Sinergia Mali Spa", "description": "Combinación exclusiva de maniobras firmes y precisas para aliviar tensiones profundas, integrando el calor de las piedras calientes, la suavidad de los aceites vegetales, el aroma envolvente de las velas y el toque terapéutico de los aceites esenciales."},
+          {"name": "Exfoliación de Espalda", "description": "Con cristales y aceites vegetales"},
+          {"name": "Masaje Craneofacial", "description": null},
+          {"name": "Degustación Sensorial", "description": "Opción de vino o bebida especial, frutas, nueces y chocolates."}
+        ]
       },
-      "daySpaSentir": {
+      "day-spa-sentir": {
         "name": "Day Spa Sentir",
-        "description": "Jornada sensorial prolongada para una experiencia completa de autocuidado."
+        "slogan": "Conexión y placer sensorial.",
+        "description": "Una combinación de relajación profunda, conexión y placer sensorial.",
+        "duration": "2h 30min",
+        "includes": [
+          {"name": "Ritual de Bienvenida", "description": "Baño de pies con rosas seguido de exfoliación y reflexología podal"},
+          {"name": "Masaje Sinergia Mali Spa", "description": "Combinación exclusiva de maniobras firmes y precisas para aliviar tensiones profundas, integrando el calor de las piedras calientes, la suavidad de los aceites vegetales, el aroma envolvente de las velas y el toque terapéutico de los aceites esenciales."},
+          {"name": "Exfoliación Corporal", "description": "Con rosas, cristales y aceites vegetales"},
+          {"name": "Masaje Craneofacial", "description": null},
+          {"name": "Revitalización Facial", "description": null},
+          {"name": "Degustación Sensorial y Ambientación", "description": "Rosas rojas o flores silvestres. Opción de vino o bebida especial, frutas, nueces y chocolates."}
+        ]
       },
-      "coupleExperiences": {
-        "name": "Experiencias para Parejas",
-        "description": "Momentos especiales de relajación y conexión diseñados para parejas."
+      "day-spa-aconchego": {
+        "name": "Day Spa Confort",
+        "slogan": "Confort en forma de cuidado.",
+        "description": "Un ritual restaurador que une el poder reconfortante del calor, la sutileza del tacto y los beneficios de los aromas naturales.",
+        "duration": "1h 30min",
+        "includes": [
+          {"name": "Baño de Pies de Bienvenida", "description": null},
+          {"name": "Ritual de Aromaterapia", "description": null},
+          {"name": "Masaje Terapéutico Relajante combinado con Piedras Calientes", "description": null},
+          {"name": "Degustación", "description": "Tés Gourmet, chocolate caliente o capuchino y galletas finas"}
+        ]
+      },
+      "day-spa-revitalizar": {
+        "name": "Day Spa Revitalizar",
+        "slogan": "Ligereza que se siente en la piel. Cuidado que se prolonga en el tiempo.",
+        "description": "Un ritual para renovar el cuerpo, despertar los sentidos y dejar la piel luminosa.",
+        "duration": "1h 30min",
+        "includes": [
+          {"name": "Baño de Pies de Bienvenida", "description": null},
+          {"name": "Ritual de Aromaterapia", "description": null},
+          {"name": "Drenaje Linfático", "description": null},
+          {"name": "Masaje Relajante de Espalda", "description": null},
+          {"name": "Degustación", "description": "Bebida funcional fría y nueces"}
+        ]
+      },
+      "banho-hammam": {
+        "name": "Baño Hammam",
+        "slogan": "Una experiencia rara en João Pessoa.",
+        "description": "Inspirado en los rituales tradicionales de purificación, el Baño Hammam de Mali Spa es una experiencia de limpieza, relajación y renovación energética, conducida con vapor, agua y toque consciente.",
+        "duration": "Consulte"
+      },
+      "experience-relax": {
+        "name": "Experience Relax",
+        "slogan": "Cuidarse es un acto de reconexión.",
+        "description": "Una pausa suave para calmar cuerpo y mente, con toques que despiertan ligereza y bienestar.",
+        "duration": "1h 30min",
+        "includes": [
+          {"name": "Baño de Pies", "description": "Con hierbas, sales y aceites esenciales"},
+          {"name": "Aromaterapia Personalizada", "description": null},
+          {"name": "Exfoliación e Hidratación de Pies", "description": null},
+          {"name": "Masaje Podal", "description": null},
+          {"name": "Masaje Relajante", "description": "Con maniobras suaves y continuas para reducir estrés, aliviar tensiones musculares y proporcionar bienestar general."},
+          {"name": "Degustación", "description": "Tés y galletas finas"}
+        ]
+      },
+      "experience-therapy": {
+        "name": "Experience Therapy",
+        "slogan": "El tacto como acto de cuidado.",
+        "description": "Cuidado profundo e intencional para quienes buscan aliviar dolores, tensiones y reconectarse con su propio cuerpo.",
+        "duration": "1h 30min",
+        "includes": [
+          {"name": "Baño de Pies de Bienvenida", "description": null},
+          {"name": "Aromaterapia", "description": null},
+          {"name": "Masaje Terapéutico", "description": "Con presión más firme en la fascia muscular, seguida de maniobras relajantes, para tratar dolores y tensiones musculares."},
+          {"name": "Degustación", "description": "Tés y galletas finas"}
+        ]
       }
     },
     "categories": {
@@ -108,7 +171,63 @@
     "viewAll": "Ver todas las reseñas",
     "postedOn": "Publicado en Google",
     "experienceCTA": "¿También tuvo una experiencia especial con nosotros?",
-    "leaveReview": "Deje su reseña en Google"
+    "leaveReview": "Deje su reseña en Google",
+    "items": [
+      {
+        "author": "Mariana Silva",
+        "text": "¡Experiencia maravillosa! El ambiente es acogedor y los profesionales extremadamente atentos. El masaje relajante fue perfecto, salí renovada."
+      },
+      {
+        "author": "Carlos Eduardo",
+        "text": "¡Atención impecable! Mali Spa superó todas mis expectativas. Recomiendo mucho el Day Spa, vale cada centavo."
+      },
+      {
+        "author": "Juliana Costa",
+        "text": "Lugar increíble para relajarse y cuidarse. Las terapeutas son muy profesionales y el ambiente transmite paz y tranquilidad."
+      },
+      {
+        "author": "Ricardo Mendes",
+        "text": "¡Mejor spa de João Pessoa! Fui para el masaje terapéutico y volveré con seguridad. Excelente relación costo-beneficio."
+      },
+      {
+        "author": "Ana Paula Santos",
+        "text": "¡Simplemente perfecto! Desde la recepción hasta el final de la atención, todo fue impecable. ¡Volveré siempre!"
+      },
+      {
+        "author": "Fernando Oliveira",
+        "text": "¡Experiencia única! Mali Spa es el mejor lugar para relajarse en João Pessoa. ¡Super recomiendo!"
+      }
+    ]
+  },
+  "instagram": {
+    "title": "Síguenos en Instagram",
+    "subtitle": "Conoce nuestro día a día, novedades y momentos especiales de nuestros clientes",
+    "followButton": "Seguir @malispa_br"
+  },
+  "giftCard": {
+    "title": "Gift Card & Regalos",
+    "subtitle": "Ideal para ocasiones especiales o emocionar a quien amas",
+    "badge": "Dar cuidado es un gesto de amor",
+    "optionsTitle": "Opciones de Regalo",
+    "options": {
+      "digital": {
+        "name": "Gift Card Digital",
+        "description": "Enviado por correo electrónico, válido para todas las experiencias"
+      },
+      "giftbox": {
+        "name": "Giftbox",
+        "description": "Embalaje especial con productos seleccionados"
+      },
+      "flowers": {
+        "name": "Ramo de Rosas o Flores",
+        "description": "Toque especial para hacer el momento aún más memorable"
+      }
+    },
+    "quote": "Regalar bienestar es ofrecer tiempo, presencia y cuidado.",
+    "cta": "Comprar Gift Card",
+    "ctaSubtext": "Contáctenos para personalizar su regalo",
+    "bannerTitle": "Regalo Perfecto para Quien Amas",
+    "bannerText": "Sorprende con una experiencia única de relajación y renovación en Mali Spa"
   },
   "footer": {
     "navigation": "Navegación",

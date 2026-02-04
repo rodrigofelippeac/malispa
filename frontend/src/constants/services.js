@@ -9,10 +9,6 @@ export const daySpas = [
     description: 'Uma jornada completa de relaxamento e renovação.',
     slogan: 'Experiência completa de bem-estar.',
     duration: '2h 30min',
-    price: {
-      individual: 450.00,
-      couple: 790.00,
-    },
     includes: [
       {
         name: 'Ritual de Boas Vindas',
@@ -49,10 +45,6 @@ export const daySpas = [
     description: 'Uma combinação relaxamento profundo, conexão e prazer sensorial.',
     slogan: 'Conexão e prazer sensorial.',
     duration: '2h 30min',
-    price: {
-      individual: 490.00,
-      couple: 890.00,
-    },
     includes: [
       {
         name: 'Ritual de Boas Vindas',
@@ -89,10 +81,6 @@ export const daySpas = [
     description: 'Um ritual restaurador que une o poder reconfortante do calor, a sutileza do toque e os benefícios dos aromas naturais.',
     slogan: 'Aconchego em forma de cuidado.',
     duration: '1h 30min',
-    price: {
-      individual: 250.00,
-      couple: 450.00,
-    },
     includes: [
       {
         name: 'Escalda-pés de boas vindas',
@@ -121,10 +109,6 @@ export const daySpas = [
     description: 'Um ritual para renovar o corpo, despertar os sentidos e deixar a pele luminosa.',
     slogan: 'Leveza que se sente na pele. Cuidado que se prolonga no tempo.',
     duration: '1h 30min',
-    price: {
-      individual: 250.00,
-      couple: 450.00,
-    },
     includes: [
       {
         name: 'Escalda-pés de boas vindas',
@@ -155,16 +139,23 @@ export const daySpas = [
 // ========== EXPERIENCES ==========
 export const experiences = [
   {
+    id: 'banho-hammam',
+    name: 'Banho Hammam',
+    category: 'experiences',
+    description: 'Inspirado nos rituais tradicionais de purificação, o Banho Hammam do Mali Spa é uma experiência de limpeza, relaxamento e renovação energética, conduzida com vapor, água e toque consciente.',
+    slogan: 'Uma experiência rara em João Pessoa.',
+    duration: 'Consulte',
+    isExclusive: true,
+    image: '/banho-hammam.jpg',
+    featured: true,
+  },
+  {
     id: 'experience-relax',
     name: 'Experience Relax',
     category: 'experiences',
     description: 'Uma pausa suave para acalmar corpo e mente, com toques que despertam leveza e bem-estar.',
     slogan: 'Cuidar-se é um gesto de reconexão.',
     duration: '1h 30min',
-    price: {
-      individual: 250.00,
-      couple: 450.00,
-    },
     includes: [
       {
         name: 'Escalda-pés',
@@ -201,10 +192,6 @@ export const experiences = [
     description: 'Cuidado profundo e intencional para quem busca aliviar dores, tensões e reconectar-se com o próprio corpo.',
     slogan: 'O toque como gesto de cuidado.',
     duration: '1h 30min',
-    price: {
-      individual: 250.00,
-      couple: 450.00,
-    },
     includes: [
       {
         name: 'Escalda-pés de boas vindas',

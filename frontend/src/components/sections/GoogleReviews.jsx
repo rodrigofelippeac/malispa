@@ -11,57 +11,16 @@ export default function GoogleReviews() {
   const { t } = useTranslation()
   const [currentIndex, setCurrentIndex] = useState(0)
 
-  // Avaliações positivas 5 estrelas (substituir por avaliações reais do Google)
-  const reviews = [
-    {
-      id: 1,
-      author: 'Mariana Silva',
-      rating: 5,
-      date: '2025-01-15',
-      text: 'Experiência maravilhosa! O ambiente é acolhedor e os profissionais extremamente atenciosos. A massagem relaxante foi perfeita, saí renovada.',
-      avatar: 'MS'
-    },
-    {
-      id: 2,
-      author: 'Carlos Eduardo',
-      rating: 5,
-      date: '2025-01-10',
-      text: 'Atendimento impecável! O Mali Spa superou todas as minhas expectativas. Recomendo muito o Day Spa, vale cada centavo.',
-      avatar: 'CE'
-    },
-    {
-      id: 3,
-      author: 'Juliana Costa',
-      rating: 5,
-      date: '2024-12-28',
-      text: 'Lugar incrível para relaxar e se cuidar. As terapeutas são muito profissionais e o ambiente transmite paz e tranquilidade.',
-      avatar: 'JC'
-    },
-    {
-      id: 4,
-      author: 'Ricardo Mendes',
-      rating: 5,
-      date: '2024-12-20',
-      text: 'Melhor spa de João Pessoa! Fui para a massagem terapêutica e voltarei com certeza. Excelente custo-benefício.',
-      avatar: 'RM'
-    },
-    {
-      id: 5,
-      author: 'Ana Paula Santos',
-      rating: 5,
-      date: '2024-12-15',
-      text: 'Simplesmente perfeito! Desde a recepção até o final do atendimento, tudo foi impecável. Voltarei sempre!',
-      avatar: 'AP'
-    },
-    {
-      id: 6,
-      author: 'Fernando Oliveira',
-      rating: 5,
-      date: '2024-12-05',
-      text: 'Experiência única! O Mali Spa é o melhor lugar para relaxar em João Pessoa. Super recomendo!',
-      avatar: 'FO'
-    }
-  ]
+  // Avaliações traduzidas do arquivo de i18n
+  const reviewsData = t('reviews.items', { returnObjects: true })
+  const reviews = reviewsData.map((review, index) => ({
+    id: index + 1,
+    author: review.author,
+    rating: 5,
+    date: ['2025-01-15', '2025-01-10', '2024-12-28', '2024-12-20', '2024-12-15', '2024-12-05'][index],
+    text: review.text,
+    avatar: review.author.split(' ').map(n => n[0]).join('')
+  }))
 
   // Dados das avaliações do Google
   const averageRating = 4.9
