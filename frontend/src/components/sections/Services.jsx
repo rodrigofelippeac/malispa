@@ -42,7 +42,7 @@ export default function Services() {
             <Card
               key={service.id}
               variant="default"
-              className="overflow-hidden group hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-2 border-gray-100 flex flex-col h-full"
+              className="overflow-hidden group hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-2 border-gray-100 flex flex-col"
             >
               {/* Imagem */}
               <div className="relative h-56 md:h-48 bg-gradient-to-br from-secondary-100 via-secondary-light to-white overflow-hidden">
@@ -61,58 +61,62 @@ export default function Services() {
                 </div>
               </div>
 
-              {/* Conteúdo */}
-              <div className="p-6 space-y-4 flex flex-col flex-grow">
-                {/* Título */}
-                <h3 className="text-xl font-heading font-bold text-brown-dark group-hover:text-gold transition-colors">
-                  {service.name}
-                </h3>
+              {/* Conteúdo com flex para alinhar botão no final */}
+              <div className="p-6 flex flex-col h-full">
+                {/* Conteúdo superior que cresce */}
+                <div className="space-y-3 flex-grow">
+                  {/* Título */}
+                  <h3 className="text-xl font-heading font-bold text-brown-dark group-hover:text-gold transition-colors">
+                    {service.name}
+                  </h3>
 
-                {/* Slogan (se houver) */}
-                {service.slogan && (
-                  <p className="text-sm italic text-gold-dark font-medium">
-                    {service.slogan}
+                  {/* Slogan (se houver) */}
+                  {service.slogan && (
+                    <p className="text-sm italic text-gold-dark font-medium">
+                      {service.slogan}
+                    </p>
+                  )}
+
+                  {/* Duração */}
+                  <div className="flex items-center gap-2 text-brown">
+                    <FaClock className="text-gold" />
+                    <span className="text-sm font-medium">{service.duration}</span>
+                  </div>
+
+                  {/* Descrição */}
+                  <p className="text-gray-700 text-sm leading-relaxed line-clamp-3">
+                    {service.description}
                   </p>
-                )}
-
-                {/* Duração */}
-                <div className="flex items-center gap-2 text-brown">
-                  <FaClock className="text-gold" />
-                  <span className="text-sm font-medium">{service.duration}</span>
                 </div>
 
-                {/* Descrição */}
-                <p className="text-gray-700 text-sm leading-relaxed line-clamp-3">
-                  {service.description}
-                </p>
-
-                {/* Preços */}
-                {service.price && (
-                  <div className="pt-2 flex items-center gap-4 bg-beige-light p-3 rounded-lg">
-                    <div>
-                      <div className="text-xs text-brown-light font-medium">Individual</div>
-                      <span className="text-xl font-bold text-brown-dark">
-                        {formatPrice(service.price.individual)}
-                      </span>
-                    </div>
-                    {service.price.couple && (
-                      <>
-                        <div className="h-8 w-px bg-gold"></div>
-                        <div>
-                          <div className="text-xs text-brown-light font-medium flex items-center gap-1">
-                            <FaUsers className="text-xs" /> Casal
+                {/* Preços e CTA sempre alinhados no final */}
+                <div className="space-y-3 mt-4">
+                  {/* Preços */}
+                  {service.price && (
+                    <div className="flex items-center gap-4 bg-beige-light p-3 rounded-lg">
+                      <div>
+                        <div className="text-xs text-brown-light font-medium">Individual</div>
+                        <span className="text-xl font-bold text-brown-dark">
+                          {formatPrice(service.price.individual)}
+                        </span>
+                      </div>
+                      {service.price.couple && (
+                        <>
+                          <div className="h-8 w-px bg-gold"></div>
+                          <div>
+                            <div className="text-xs text-brown-light font-medium flex items-center gap-1">
+                              <FaUsers className="text-xs" /> Casal
+                            </div>
+                            <span className="text-xl font-bold text-brown-dark">
+                              {formatPrice(service.price.couple)}
+                            </span>
                           </div>
-                          <span className="text-xl font-bold text-brown-dark">
-                            {formatPrice(service.price.couple)}
-                          </span>
-                        </div>
-                      </>
-                    )}
-                  </div>
-                )}
+                        </>
+                      )}
+                    </div>
+                  )}
 
-                {/* CTA */}
-                <div className="pt-4 mt-auto">
+                  {/* CTA */}
                   <Button
                     href={getWhatsAppLink(getServiceWhatsAppMessage(service.name))}
                     size="md"

@@ -25,8 +25,8 @@
         "description": "Cada sesión comienza con una escucha atenta a sus necesidades"
       },
       "techniques": {
-        "title": "Técnicas Ancestrales",
-        "description": "Combinamos sabidurías milenarias con prácticas terapéuticas modernas"
+        "title": "Técnicas de Masajes",
+        "description": "Combinamos saberes terapéuticos con prácticas modernas de bienestar"
       },
       "personalized": {
         "title": "Atención Personalizada",
@@ -45,7 +45,7 @@
     "items": {
       "experienceTherapy": {
         "name": "Experience Therapy",
-        "description": "Terapia que combina técnicas ancestrales con una escucha presente, respetando el ritmo de quienes llegan."
+        "description": "Terapia que combina técnicas de masajes con una escucha presente, respetando el ritmo de quienes llegan."
       },
       "experienceRelax": {
         "name": "Experience Relax",
@@ -57,7 +57,7 @@
       },
       "ritualRevitalizar": {
         "name": "Ritual Revitalizar",
-        "description": "Ritual de revitalización y renovación de energías a través de técnicas holísticas."
+        "description": "Ritual de revitalización y renovación de energías a través de técnicas de masajes."
       },
       "daySpaMali": {
         "name": "Day Spa Mali",
@@ -97,8 +97,18 @@
       "sunday": "Domingo",
       "byAppointment": "Con cita previa"
     },
-    "whatsappMessage": "¡Hola! Me gustaría agendar una cita en Mali Spa.",
-    "serviceMessage": "¡Hola! Me gustaría agendar: {{serviceName}}"
+    "whatsappMessage": "¡Hola! Los encontré por el sitio web y me gustaría agendar una cita en Mali Spa.",
+    "serviceMessage": "¡Hola! Los encontré por el sitio web y me gustaría agendar: {{serviceName}}"
+  },
+  "reviews": {
+    "title": "Lo Que Dicen Nuestros Clientes",
+    "subtitle": "Reseñas reales de personas que vivieron experiencias transformadoras en Mali Spa",
+    "basedOn": "Basado en",
+    "reviews": "reseñas",
+    "viewAll": "Ver todas las reseñas",
+    "postedOn": "Publicado en Google",
+    "experienceCTA": "¿También tuvo una experiencia especial con nosotros?",
+    "leaveReview": "Deje su reseña en Google"
   },
   "footer": {
     "navigation": "Navegación",

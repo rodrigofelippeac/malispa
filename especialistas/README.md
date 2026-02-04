@@ -4,15 +4,21 @@ Esta pasta contém documentação técnica detalhada e planos especializados par
 
 ## Documentos
 
-### [PLANO-LAYOUT.md](PLANO-LAYOUT.md)
-**Plano completo de layout e estrutura visual**
-- Princípios de design
-- Estrutura das seções da landing page
-- Sistema de componentes
-- Responsividade e breakpoints
+### [PLANO-LAYOUT.md](PLANO-LAYOUT.md) ⭐
+**Plano completo de Layout & UX Guidelines (v2.0.0)**
+- Personas e jornada do usuário
+- Princípios de design & UX
+- Paleta de cores e tipografia
+- Sistema de espaçamento
+- Estrutura detalhada de todas as seções
+- Micro-interações e feedback
+- Acessibilidade WCAG 2.1 AA
+- SEO e Schema.org
+- Métricas de UX e Performance
+- Checklist completo de publicação
+- Responsividade mobile-first
 - Animações e transições
-- Acessibilidade
-- Performance
+- Padrões de CTAs
 
 ### [DESIGN-TOKENS.md](DESIGN-TOKENS.md)
 **Tokens de design padronizados**

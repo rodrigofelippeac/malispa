@@ -116,7 +116,7 @@ export default function Footer() {
                 {t('footer.contactInfo')}
               </h4>
               <div className="flex flex-col space-y-3">
-                {/* WhatsApp */}
+                {/* WhatsApp - Ícone refinado */}
                 <a
                   href={`https://wa.me/${contact.phone.raw}`}
                   target="_blank"
@@ -124,60 +124,60 @@ export default function Footer() {
                   className="flex items-center gap-3 transition-all hover:translate-x-1 group"
                   style={{ color: '#e6efee' }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.color = '#ffffff'
+                    e.currentTarget.style.color = '#D4B46A'
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.color = '#e6efee'
                   }}
                 >
-                  <FaWhatsapp className="text-xl transition-colors" />
-                  <span>{contact.phone.display}</span>
+                  <FaWhatsapp className="text-base transition-colors" />
+                  <span className="text-sm">{contact.phone.display}</span>
                 </a>
 
-                {/* Telefone */}
+                {/* Telefone - Ícone refinado */}
                 <a
                   href={`tel:${contact.phone.raw}`}
                   className="flex items-center gap-3 transition-all hover:translate-x-1 group"
                   style={{ color: '#e6efee' }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.color = '#ffffff'
+                    e.currentTarget.style.color = '#D4B46A'
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.color = '#e6efee'
                   }}
                 >
-                  <FaPhone className="text-lg" />
-                  <span>{contact.phone.display}</span>
+                  <FaPhone className="text-sm" />
+                  <span className="text-sm">{contact.phone.display}</span>
                 </a>
 
-                {/* Email */}
+                {/* Email - Ícone refinado */}
                 <a
                   href={`mailto:${contact.email.address}`}
                   className="flex items-center gap-3 transition-all hover:translate-x-1 group"
                   style={{ color: '#e6efee' }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.color = '#ffffff'
+                    e.currentTarget.style.color = '#D4B46A'
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.color = '#e6efee'
                   }}
                 >
-                  <FaEnvelope className="text-lg" />
-                  <span>{contact.email.display}</span>
+                  <FaEnvelope className="text-sm" />
+                  <span className="text-sm">{contact.email.display}</span>
                 </a>
 
-                {/* Localização */}
+                {/* Localização - Ícone refinado */}
                 <div className="flex items-start gap-3" style={{ color: '#e6efee' }}>
-                  <FaMapMarkerAlt className="text-lg mt-1 flex-shrink-0" />
-                  <div>
+                  <FaMapMarkerAlt className="text-sm mt-1 flex-shrink-0" />
+                  <div className="text-sm">
                     <div>{contact.location.fullAddress}</div>
-                    <div className="text-xs mt-1" style={{ color: '#C9A050' }}>
+                    <div className="text-xs mt-1" style={{ color: '#D4B46A' }}>
                       {contact.location.reference}
                     </div>
                   </div>
                 </div>
 
-                {/* Instagram */}
+                {/* Instagram - Ícone refinado */}
                 <a
                   href={contact.social.instagram.url}
                   target="_blank"
@@ -185,14 +185,14 @@ export default function Footer() {
                   className="flex items-center gap-3 transition-all hover:translate-x-1 group"
                   style={{ color: '#e6efee' }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.color = '#ffffff'
+                    e.currentTarget.style.color = '#D4B46A'
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.color = '#e6efee'
                   }}
                 >
-                  <FaInstagram className="text-xl transition-colors" />
-                  <span>{contact.social.instagram.handle}</span>
+                  <FaInstagram className="text-base transition-colors" />
+                  <span className="text-sm">{contact.social.instagram.handle}</span>
                 </a>
               </div>
             </div>
@@ -200,10 +200,30 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.1)', padding: '1.5rem 0', textAlign: 'center' }}>
-          <p style={{ color: '#e6efee', opacity: 0.8, fontSize: '0.875rem' }}>
-            © {currentYear} {contact.business.name}. {t('footer.rights')}
-          </p>
+        <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.1)', padding: '1.5rem 0' }}>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-3">
+            <p style={{ color: '#e6efee', opacity: 0.8, fontSize: '0.875rem' }}>
+              © {currentYear} {contact.business.name}. {t('footer.rights')}
+            </p>
+
+            {/* Crédito Inoveon - Logo */}
+            <a
+              href="https://www.inoveon.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 opacity-60 hover:opacity-100 transition-all duration-300 hover:scale-105"
+              title="Desenvolvido por Inoveon"
+            >
+              <span style={{ color: '#e6efee', fontSize: '0.75rem' }}>
+                Desenvolvido por
+              </span>
+              <img
+                src="/logo-inoveon.png"
+                alt="Inoveon"
+                className="h-5"
+              />
+            </a>
+          </div>
         </div>
       </Container>
     </footer>

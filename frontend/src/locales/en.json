@@ -25,8 +25,8 @@
         "description": "Each session begins with attentive listening to your needs"
       },
       "techniques": {
-        "title": "Ancestral Techniques",
-        "description": "We combine ancient wisdom with modern therapeutic practices"
+        "title": "Massage Techniques",
+        "description": "We combine therapeutic knowledge with modern wellness practices"
       },
       "personalized": {
         "title": "Personalized Service",
@@ -45,7 +45,7 @@
     "items": {
       "experienceTherapy": {
         "name": "Experience Therapy",
-        "description": "Therapy that combines ancestral techniques with present listening, respecting the rhythm of those who arrive."
+        "description": "Therapy that combines massage techniques with present listening, respecting the rhythm of those who arrive."
       },
       "experienceRelax": {
         "name": "Experience Relax",
@@ -57,7 +57,7 @@
       },
       "ritualRevitalizar": {
         "name": "Revitalize Ritual",
-        "description": "Revitalization and energy renewal ritual through holistic techniques."
+        "description": "Revitalization and energy renewal ritual through massage techniques."
       },
       "daySpaMali": {
         "name": "Day Spa Mali",
@@ -97,8 +97,18 @@
       "sunday": "Sunday",
       "byAppointment": "By appointment"
     },
-    "whatsappMessage": "Hello! I would like to schedule an appointment at Mali Spa.",
-    "serviceMessage": "Hello! I would like to schedule: {{serviceName}}"
+    "whatsappMessage": "Hello! I found you through the website and would like to schedule an appointment at Mali Spa.",
+    "serviceMessage": "Hello! I found you through the website and would like to schedule: {{serviceName}}"
+  },
+  "reviews": {
+    "title": "What Our Clients Say",
+    "subtitle": "Real reviews from people who experienced transformative moments at Mali Spa",
+    "basedOn": "Based on",
+    "reviews": "reviews",
+    "viewAll": "View all reviews",
+    "postedOn": "Posted on Google",
+    "experienceCTA": "Did you also have a special experience with us?",
+    "leaveReview": "Leave your review on Google"
   },
   "footer": {
     "navigation": "Navigation",

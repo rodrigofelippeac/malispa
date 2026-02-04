@@ -1,0 +1,48 @@
+{
+  "name": "Mali Spa - Spa em Tambaú, João Pessoa",
+  "short_name": "Mali Spa",
+  "description": "Spa boutique em Tambaú com massagens relaxantes, terapêuticas e Day Spa. Avaliação 4.9⭐ com 69 reviews.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#e6efee",
+  "theme_color": "#311303",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo-mali-spa.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["health", "lifestyle", "wellness"],
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "scope": "/",
+  "shortcuts": [
+    {
+      "name": "Agendar Horário",
+      "short_name": "Agendar",
+      "description": "Agende seu horário no Mali Spa via WhatsApp",
+      "url": "/#contato",
+      "icons": [
+        {
+          "src": "/logo-mali-spa.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Ver Serviços",
+      "short_name": "Serviços",
+      "description": "Conheça nossas experiências",
+      "url": "/#servicos",
+      "icons": [
+        {
+          "src": "/logo-mali-spa.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}

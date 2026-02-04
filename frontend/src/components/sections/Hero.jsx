@@ -19,30 +19,31 @@ export default function Hero() {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      {/* Overlay gradiente marrom/dourado para identidade visual */}
-      <div className="absolute inset-0 bg-gradient-to-b from-brown-dark/60 via-brown/50 to-primary/70" />
+      {/* Overlay gradiente escuro melhorado para contraste de texto */}
+      <div className="absolute inset-0 bg-gradient-to-b from-brown-dark/75 via-brown/65 to-primary/80" />
 
       {/* Conteúdo */}
       <Container className="relative z-10 pt-20 pb-16">
         <div className="text-center space-y-8">
-          {/* Logo */}
+          {/* Logo - Tamanho reduzido para não competir com a imagem */}
           <div className="flex justify-center mb-8">
-            <div className="w-48 h-48 md:w-60 md:h-60 lg:w-72 lg:h-72">
+            <div className="w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56">
               <img
                 src="/logo-mali-spa.png"
                 alt="Mali Spa"
                 className="w-full h-full object-contain drop-shadow-2xl"
+                loading="eager"
               />
             </div>
           </div>
 
-          {/* Tagline */}
-          <p className="text-2xl md:text-3xl font-light text-white/95">
+          {/* Tagline com sombra para legibilidade */}
+          <p className="text-2xl md:text-3xl font-light text-white/95" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.4)' }}>
             {t('hero.tagline')}
           </p>
 
-          {/* Descrição */}
-          <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed px-4">
+          {/* Descrição com sombra para legibilidade */}
+          <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed px-4" style={{ textShadow: '0 2px 6px rgba(0,0,0,0.3)' }}>
             {t('hero.description')}
           </p>
 

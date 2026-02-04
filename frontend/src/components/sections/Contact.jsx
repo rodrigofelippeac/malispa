@@ -149,8 +149,8 @@ export default function Contact() {
             </Button>
           </div>
 
-          {/* Mapa */}
-          <div className="aspect-[21/9] bg-beige-light rounded-xl overflow-hidden shadow-lg">
+          {/* Mapa com cantos arredondados suaves */}
+          <div className="aspect-[21/9] bg-beige-light rounded-2xl overflow-hidden shadow-xl">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.7!2d-34.8329!3d-7.1166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace839c32e8455%3A0x1e0c7c1c7c1c7c1c!2sRua%20Nossa%20Senhora%20dos%20Navegantes%2C%20431%20-%20Tamba%C3%BA%2C%20Jo%C3%A3o%20Pessoa%20-%20PB!5e0!3m2!1spt-BR!2sbr!4v1234567890"
               width="100%"

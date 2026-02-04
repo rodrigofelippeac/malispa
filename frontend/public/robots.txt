@@ -1,0 +1,26 @@
+# robots.txt para Mali Spa
+# Permite indexação completa do site
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://malispa.com.br/sitemap.xml
+
+# Crawl-delay (opcional, para bots bem comportados)
+Crawl-delay: 1
+
+# Bloquear apenas arquivos de sistema (se houver)
+Disallow: /node_modules/
+Disallow: /*.json$
+Disallow: /package.json
+Disallow: /vite.config.js
+
+# Permitir explicitamente recursos importantes
+Allow: /logo-mali-spa.png
+Allow: /hero-massagem.jpg
+Allow: /ambiente-spa.jpg
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.css$
+Allow: /*.js$

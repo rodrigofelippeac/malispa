@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://malispa.com.br/</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://malispa.com.br/logo-mali-spa.png</image:loc>
+      <image:title>Mali Spa - Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://malispa.com.br/hero-massagem.jpg</image:loc>
+      <image:title>Mali Spa - Massagem Relaxante</image:title>
+    </image:image>
+  </url>
+
+  <!-- Seções da página (âncoras importantes) -->
+  <url>
+    <loc>https://malispa.com.br/#sobre</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://malispa.com.br/#servicos</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://malispa.com.br/#contato</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://malispa.com.br/#avaliacoes</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

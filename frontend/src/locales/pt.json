@@ -8,7 +8,7 @@
   },
   "hero": {
     "tagline": "Um convite ao cuidado",
-    "description": "Técnicas ancestrais e uma escuta presente — respeitando o ritmo de quem chega.",
+    "description": "No Mali Spa, cada detalhe convida ao equilíbrio entre corpo, mente e presença.",
     "scheduleButton": "Agendar Horário",
     "viewExperiences": "Ver Experiências",
     "scrollDown": "Rolar para baixo"
@@ -16,7 +16,7 @@
   "about": {
     "title": "Sobre Nós",
     "subtitle": "Um refúgio de bem-estar em João Pessoa",
-    "description": "O Mali Spa é um refúgio de bem-estar na nossa linda João Pessoa. Um espaço para promover equilíbrio entre corpo e mente, onde cada detalhe foi pensado para proporcionar harmonia, saúde, relaxamento e vitalidade.\n\nNossas terapias combinam técnicas ancestrais com uma escuta atenta e presente, respeitando o ritmo único de cada pessoa que chega. Acreditamos que o verdadeiro bem-estar nasce da conexão profunda entre corpo, mente e espírito — e cada sessão é uma jornada de reconexão consigo mesmo.",
+    "description": "O Mali Spa é um refúgio de bem-estar na nossa linda João Pessoa. Um espaço para promover equilíbrio entre corpo e mente, onde cada detalhe foi pensado para proporcionar harmonia, saúde, relaxamento e vitalidade.\n\nNossas terapias combinam técnicas de massagens com uma escuta atenta e presente, respeitando o ritmo único de cada pessoa que chega. Acreditamos que o verdadeiro bem-estar nasce da conexão profunda entre corpo, mente e espírito — e cada sessão é uma jornada de reconexão consigo mesmo.",
     "differentials": {
       "title": "Nossos Diferenciais",
       "listening": {
@@ -24,7 +24,7 @@
         "description": "Cada atendimento começa com uma escuta atenta às suas necessidades"
       },
       "techniques": {
-        "title": "Técnicas Holísticas",
+        "title": "Técnicas de Massagens",
         "description": "Combinamos saberes terapêuticos com práticas modernas de bem-estar"
       },
       "personalized": {
@@ -44,7 +44,7 @@
     "items": {
       "experienceTherapy": {
         "name": "Experience Therapy",
-        "description": "Terapia que combina técnicas ancestrais com uma escuta presente, respeitando o ritmo de quem chega."
+        "description": "Terapia que combina técnicas de massagens com uma escuta presente, respeitando o ritmo de quem chega."
       },
       "experienceRelax": {
         "name": "Experience Relax",
@@ -56,7 +56,7 @@
       },
       "ritualRevitalizar": {
         "name": "Ritual Revitalizar",
-        "description": "Ritual de revitalização e renovação de energias através de técnicas holísticas."
+        "description": "Ritual de revitalização e renovação de energias através de técnicas de massagens."
       },
       "daySpaMali": {
         "name": "Day Spa Mali",
@@ -96,8 +96,18 @@
       "sunday": "Domingo",
       "byAppointment": "Mediante agendamento"
     },
-    "whatsappMessage": "Olá! Gostaria de agendar um horário no Mali Spa.",
-    "serviceMessage": "Olá! Gostaria de agendar: {{serviceName}}"
+    "whatsappMessage": "Olá! Encontrei pelo site e gostaria de agendar um horário no Mali Spa.",
+    "serviceMessage": "Olá! Encontrei pelo site e gostaria de agendar: {{serviceName}}"
+  },
+  "reviews": {
+    "title": "O Que Nossos Clientes Dizem",
+    "subtitle": "Avaliações reais de pessoas que viveram experiências transformadoras no Mali Spa",
+    "basedOn": "Baseado em",
+    "reviews": "avaliações",
+    "viewAll": "Ver todas as avaliações",
+    "postedOn": "Publicado no Google",
+    "experienceCTA": "Você também teve uma experiência especial conosco?",
+    "leaveReview": "Deixe sua avaliação no Google"
   },
   "footer": {
     "navigation": "Navegação",

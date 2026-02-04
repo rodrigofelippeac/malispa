@@ -88,9 +88,7 @@ export default function Header() {
 
           {/* Language Selector Desktop */}
           <div className="hidden md:flex items-center gap-3">
-            <div className={isScrolled ? 'text-gray-700' : 'text-white'}>
-              <LanguageSelector />
-            </div>
+            <LanguageSelector isScrolled={isScrolled} />
           </div>
 
           {/* Botão Menu Mobile */}
@@ -140,9 +138,7 @@ export default function Header() {
 
                 {/* Language Selector Mobile */}
                 <div className="pt-2 pb-2 px-4">
-                  <div className="text-gray-700">
-                    <LanguageSelector />
-                  </div>
+                  <LanguageSelector isScrolled={true} />
                 </div>
               </nav>
             </Container>
