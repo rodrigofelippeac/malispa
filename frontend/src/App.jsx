@@ -1,17 +1,26 @@
+import { lazy, Suspense } from 'react'
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
 import WhatsAppButton from './components/common/WhatsAppButton'
+import ScrollProgress from './components/common/ScrollProgress'
+import BackToTop from './components/common/BackToTop'
+import SkeletonLoader from './components/common/SkeletonLoader'
 import Hero from './components/sections/Hero'
 import About from './components/sections/About'
 import Services from './components/sections/Services'
-import GiftCard from './components/sections/GiftCard'
-import Contact from './components/sections/Contact'
-import GoogleReviews from './components/sections/GoogleReviews'
-import InstagramFeed from './components/sections/InstagramFeed'
+
+// Lazy load non-critical sections
+const GiftCard = lazy(() => import('./components/sections/GiftCard'))
+const Contact = lazy(() => import('./components/sections/Contact'))
+const GoogleReviews = lazy(() => import('./components/sections/GoogleReviews'))
+const InstagramFeed = lazy(() => import('./components/sections/InstagramFeed'))
 
 function App() {
   return (
     <div className="min-h-screen">
+      {/* Scroll Progress Bar */}
+      <ScrollProgress />
+
       {/* Header */}
       <Header />
 
@@ -26,17 +35,24 @@ function App() {
         {/* Serviços/Experiências */}
         <Services />
 
-        {/* Gift Card & Presentes */}
-        <GiftCard />
+        {/* Lazy loaded sections with skeleton loader */}
+        <Suspense fallback={
+          <div className="py-20">
+            <SkeletonLoader type="card" count={3} />
+          </div>
+        }>
+          {/* Gift Card & Presentes */}
+          <GiftCard />
 
-        {/* Contato */}
-        <Contact />
+          {/* Contato */}
+          <Contact />
 
-        {/* Avaliações Google */}
-        <GoogleReviews />
+          {/* Avaliações Google */}
+          <GoogleReviews />
 
-        {/* Instagram Feed */}
-        <InstagramFeed />
+          {/* Instagram Feed */}
+          <InstagramFeed />
+        </Suspense>
       </main>
 
       {/* Footer */}
@@ -44,6 +60,9 @@ function App() {
 
       {/* Botão WhatsApp Flutuante */}
       <WhatsAppButton />
+
+      {/* Botão Voltar ao Topo */}
+      <BackToTop />
     </div>
   )
 }

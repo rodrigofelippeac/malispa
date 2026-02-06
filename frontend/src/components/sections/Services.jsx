@@ -4,8 +4,9 @@ import Container from '../common/Container'
 import Card from '../common/Card'
 import Button from '../common/Button'
 import Modal from '../common/Modal'
+import BookingModal from '../common/BookingModal'
 import { daySpas, experiences } from '../../constants/services'
-import { FaWhatsapp, FaClock, FaCheckCircle } from 'react-icons/fa'
+import { FaWhatsapp, FaClock, FaCheckCircle, FaCalendarCheck } from 'react-icons/fa'
 import { getWhatsAppLink } from '../../constants'
 
 /**
@@ -15,6 +16,7 @@ import { getWhatsAppLink } from '../../constants'
 export default function Services() {
   const { t } = useTranslation()
   const [selectedService, setSelectedService] = useState(null)
+  const [bookingService, setBookingService] = useState(null)
 
   // Combinar todos os serviços destacados
   const featuredServices = [...daySpas.filter(s => s.featured), ...experiences.filter(s => s.featured)]
@@ -107,7 +109,7 @@ export default function Services() {
                 </div>
 
                 {/* CTA sempre alinhado no final */}
-                <div className="mt-3">
+                <div className="mt-3 space-y-2">
                   {/* Badge Exclusivo para Banho Hammam */}
                   {service.isExclusive && (
                     <div className="mb-3 text-center">
@@ -117,14 +119,26 @@ export default function Services() {
                     </div>
                   )}
 
-                  {/* CTA com texto personalizado para Hammam */}
+                  {/* Novo botão de pré-agendamento */}
                   <Button
-                    href={getWhatsAppLink(getServiceWhatsAppMessage(service.id))}
+                    onClick={() => setBookingService({ id: service.id, name: getServiceTranslation(service.id, 'name') })}
+                    variant="primary"
                     size="md"
                     className="w-full flex items-center justify-center gap-2"
                   >
+                    <FaCalendarCheck className="text-base" />
+                    <span>Agendar Agora</span>
+                  </Button>
+
+                  {/* Botão WhatsApp direto (secundário) */}
+                  <Button
+                    href={getWhatsAppLink(getServiceWhatsAppMessage(service.id))}
+                    variant="outline"
+                    size="sm"
+                    className="w-full flex items-center justify-center gap-2"
+                  >
                     <FaWhatsapp className="text-base" />
-                    <span>{service.isExclusive ? `✨ ${t('services.liveExperience')}` : t('services.scheduleNow')}</span>
+                    <span>Ou chamar no WhatsApp</span>
                   </Button>
                 </div>
               </div>
@@ -215,19 +229,42 @@ export default function Services() {
                 </div>
               )}
 
-              {/* CTA */}
-              <Button
-                href={getWhatsAppLink(getServiceWhatsAppMessage(selectedService.id))}
-                size="lg"
-                className="w-full flex items-center justify-center gap-2"
-              >
-                <FaWhatsapp className="text-xl" />
-                <span>{selectedService.isExclusive ? `✨ ${t('services.liveExperience')}` : t('services.scheduleNow')}</span>
-              </Button>
+              {/* CTA - Duplo */}
+              <div className="space-y-3">
+                <Button
+                  onClick={() => {
+                    setSelectedService(null)
+                    setBookingService({ id: selectedService.id, name: getServiceTranslation(selectedService.id, 'name') })
+                  }}
+                  variant="primary"
+                  size="lg"
+                  className="w-full flex items-center justify-center gap-2"
+                >
+                  <FaCalendarCheck className="text-xl" />
+                  <span>Agendar com Data/Hora</span>
+                </Button>
+
+                <Button
+                  href={getWhatsAppLink(getServiceWhatsAppMessage(selectedService.id))}
+                  variant="whatsapp"
+                  size="lg"
+                  className="w-full flex items-center justify-center gap-2"
+                >
+                  <FaWhatsapp className="text-xl" />
+                  <span>Ou chamar no WhatsApp</span>
+                </Button>
+              </div>
             </div>
           </div>
         )}
       </Modal>
+
+      {/* Modal de Pré-Agendamento */}
+      <BookingModal
+        isOpen={!!bookingService}
+        onClose={() => setBookingService(null)}
+        service={bookingService}
+      />
     </section>
   )
 }
