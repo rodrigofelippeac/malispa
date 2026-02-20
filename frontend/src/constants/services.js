@@ -140,9 +140,9 @@ export const daySpas = [
 export const experiences = [
   {
     id: 'banho-hammam',
-    name: 'Banho Hammam',
+    name: 'Ritual Banho HAMMAM',
     category: 'experiences',
-    description: 'Inspirado nos rituais tradicionais de purificação, o Banho Hammam do Mali Spa é uma experiência de limpeza, relaxamento e renovação energética, conduzida com vapor, água e toque consciente.',
+    description: 'Uma experiência de purificação e entrega, inspirada nos tradicionais banhos do Oriente.\n\nO ritual inicia com um banho quente, preparando o corpo e abrindo os poros para receber os cuidados seguintes.\n\nSeguimos com uma esfoliação corporal, que remove as impurezas, ativa a circulação e renova a pele, deixando-a macia e luminosa.\nEm seguida, o corpo é envolvido em uma massagem relaxante com espuma de banho, com movimentos envolventes e fluidos que promovem profundo relaxamento físico e mental, uma sensação de leveza e acolhimento.\n\nFinalizamos com um chá de ervas cuidadosamente selecionadas, permitindo que o momento se prolongue e o corpo assimile todos os benefícios do ritual.\n\nUm convite à pausa.\nUm reencontro com o próprio ritmo.',
     slogan: 'Uma experiência rara em João Pessoa.',
     duration: 'Consulte',
     isExclusive: true,
