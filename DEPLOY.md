@@ -279,7 +279,54 @@ Após deploy, limpar cache:
 - **Desenvolvedor**: Rodrigo Felippe
 - **Email**: (adicionar email de contato)
 
+## Estatísticas de Acesso
+
+### Comandos Úteis para Monitoramento
+
+```bash
+# Total de requisições
+wc -l /var/log/nginx/access.log
+
+# IPs únicos
+awk '{print $1}' /var/log/nginx/access.log | sort -u | wc -l
+
+# Páginas mais acessadas
+awk '{print $7}' /var/log/nginx/access.log | sort | uniq -c | sort -nr | head -10
+
+# Acessos por dia
+awk '{print $4}' /var/log/nginx/access.log | cut -d: -f1 | sort | uniq -c
+
+# Taxa de sucesso (200 OK)
+awk '{if($9==200) success++; total++} END {printf "%.1f%% (%d de %d)\n", (success/total*100), success, total}' /var/log/nginx/access.log
+
+# Dispositivos Mobile vs Desktop
+grep -i 'Mobile\|Android\|iPhone' /var/log/nginx/access.log | wc -l
+grep -i 'Windows\|Macintosh' /var/log/nginx/access.log | grep -vi 'Mobile' | wc -l
+
+# Últimos acessos
+tail -20 /var/log/nginx/access.log
+```
+
+### Análise Completa
+```bash
+sshpass -p 'DYoi7AAcCbE8mUzu45Q88011YNjEK' ssh -o StrictHostKeyChecking=no root@161.97.145.112 "
+echo '=== ESTATÍSTICAS DE ACESSO ===' &&
+echo -e '\nTotal de requisições:' &&
+wc -l /var/log/nginx/access.log &&
+echo -e '\nIPs únicos:' &&
+awk '{print \$1}' /var/log/nginx/access.log | sort -u | wc -l &&
+echo -e '\nAcessos legítimos à página principal:' &&
+grep 'GET / HTTP' /var/log/nginx/access.log | grep ' 200 ' | wc -l
+"
+```
+
 ## Changelog
+
+### 2026-02-20 - Atualização Ritual Banho HAMMAM
+- Atualizada descrição completa do Ritual Banho HAMMAM
+- Melhorada comunicação dos benefícios e etapas do ritual
+- Deploy realizado com sucesso
+- **Estatísticas**: 1.672 requisições, 143 IPs únicos, 97 visualizações legítimas
 
 ### 2026-02-02 - Setup Inicial
 - Servidor Contabo configurado
@@ -289,8 +336,8 @@ Após deploy, limpar cache:
 
 ---
 
-**Última atualização**: 02 de Fevereiro de 2026
-**Versão**: 1.0.0
+**Última atualização**: 20 de Fevereiro de 2026
+**Versão**: 1.1.0
 
 ## Notas Importantes
 
